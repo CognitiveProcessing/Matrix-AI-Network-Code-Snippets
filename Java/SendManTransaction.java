@@ -15,7 +15,7 @@ import java.security.SignatureException;
 import java.util.*;
 import java.util.concurrent.ExecutionException;
 
-public class sendManTransaction {
+public class SendManTransaction {
     static AiManj man3j = AiManj.build(new HttpService("https://api01.matrix.io"));
 
     public static void main(String[] args) {
