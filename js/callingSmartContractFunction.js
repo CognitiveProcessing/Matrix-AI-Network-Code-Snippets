@@ -24,7 +24,7 @@ var chainId = 1; //Mainnet chain ID
 const sendRawTransaction = () => {
     return new Promise((resolve, reject) => {
         //We initialize a contract instance
-        let ContractInstance = man3.man.contract(contractAbi).at(getAddress(contractAddress))
+        let ContractInstance = man3.man.contract(contractAbi).at(contractAddress)
         //We get the nonce (tx count)
         let nonce = man3.man.getTransactionCount(ourAddress)
         nonce = numToHex(nonce)
